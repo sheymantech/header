@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.body {
+  background-color: aliceblue;
+  height: 100vh;
+}
+.menu-toggler {
+  display: none;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 1.5rem;
+  background-color: white;
+  width: 100%;
+  overflow-x: hidden;
+  box-shadow: 0px 0px 10px 2px rgb(230, 224, 224);
+  flex-wrap: wrap;
+  transition: transform 2s ease;
+}
+.rotate-trans {
+  transform: rotate(0deg);
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.header span {
+  color: blue;
+}
+a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+nav li {
+  margin-right: 1rem;
+}
+.icon-wrapper .bi {
+  font-size: 20px;
+  margin-right: 0.6rem;
+  color: blue;
+}
+
+@media only screen and (max-width: 700px) {
+  .menu-toggler {
+    display: block;
+  }
+  .menu-toggler .bi {
+    font-size: 35px;
+    font-weight: 900;
+    color: blue;
+    transition: transform 0.5 ease;
+  }
+
+  nav {
+    display: none;
+  }
+  .header ul {
+    display: block;
+  }
+  .header li {
+    margin-bottom: 0.8rem;
+  }
+  .icon-wrapper {
+    width: 100%;
+    margin-left: 1rem;
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
